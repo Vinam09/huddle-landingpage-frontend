@@ -1,0 +1,366 @@
+/*
+Headings
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+font-family: 'Poppins', sans-serif;
+
+Body, Call-to-actions
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+font-family: 'Open Sans', sans-serif;
+ */
+
+:root{
+  --primarypink: hsl(322, 100%, 66%);
+  --hoverpink:hsla(322,100%,66%,0.75);
+  --palecyan: hsl(193, 100%, 96%);
+  --darkcyan: hsl(192, 100%, 9%);
+  --grayishblue: hsl(208, 11%, 55%);
+}
+
+
+body{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  padding-right: 1rem;
+  font-size: 2.5rem;
+  color: var(--darkcyan);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+p{
+  padding-right: 1.5rem;
+  color: var(--darkcyan);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* LANDING */
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-right: 2.5rem;
+  width: 80%;
+}
+.image-mockup{
+  width: 100%;
+}
+.get-started-btn{
+  margin-top: 2rem;
+  background-color: var(--primarypink);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow:1px 1px 5px var(--grayishblue);
+  transition: background 300ms ease-in;
+}
+.get-started-btn:hover{
+  cursor: pointer;
+  background-color: var(--hoverpink);
+
+}
+#landing{
+  padding: 5rem;
+  background: url("images/bg-hero-desktop.svg");
+  background-color:rgba(135,206,235,0.1);
+  background-repeat:no-repeat;
+}
+#try-it{
+  background-color: white;
+  color: var(--darkcyan);
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow:1px 1px 10px var(--grayishblue);
+  transition: color 300ms ease-in;
+}
+#try-it:hover{
+  cursor: pointer;
+  color: var(--grayishblue);
+}
+#mockup-image{
+  width: 100%;
+}
+
+/* SECOND SECTION ILLUSTRATIONS*/
+
+h2{
+  font-size: 2rem;
+  color: var(--darkcyan);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+
+}
+.illustration-cards{
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  max-width: 1200px;
+  padding: 4rem 2rem 4rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow:1px 1px 10px var(--grayishblue);
+  margin:1rem auto;
+}
+.card-text{
+  margin: auto;
+}
+.card-img{
+  width: 100%;
+  margin-left: 10rem;
+}
+.card-img img{
+  width: 100%
+}
+
+.card-paragraph{
+  color: var(--grayishblue);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+#card-2{
+  flex-direction: row-reverse;
+}
+#card-2 .card-img{
+  margin-left: 0;
+  margin-right: 10rem;
+}
+#illustrations{
+  padding: 6rem 5rem 18rem 5rem;
+}
+
+/* Footer */
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ready-card{
+  background-color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow:0px -1px 5px var(--grayishblue);
+  position: absolute;
+  bottom: 80%;
+  left: 25%;
+  right: 25%;
+}
+.logo-footer{
+  filter: grayscale(1) invert(1) brightness(2) ;
+  margin-top: 5rem;
+}
+.footer-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.footer-text-info{
+  width: 25%;
+
+}
+.footer-flex-icon{
+  display: flex;
+  flex-direction: row;
+}
+.footer-p{
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding:0;
+}
+.copyright{
+  font-size:0.7rem;
+  text-align: right;
+  color: white;
+  padding:0;
+}
+.social-img{
+  max-width: 25px;
+  margin-left: 0.5rem;
+}
+.social-img:hover{
+  cursor: pointer;
+  filter: brightness(0.5) sepia(1) saturate(10000%) hue-rotate(322deg);
+}
+#footer{
+  position: relative;
+  padding: 5rem;
+  background: var(--darkcyan);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 1250px){
+
+  body #landing{
+    text-align: center;
+  }
+  h2{
+    font-size: 1.75rem;
+  }
+  .intro{
+    flex-direction: column;
+  }
+  .text{
+    margin: auto;
+  }
+  #mockup-image{
+    margin-top: 2.5rem;
+    max-width: 750px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  body #illustrations{
+    text-align: center;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  .card{
+    flex-direction: column-reverse;
+  }
+  .card img{
+    max-width: 550px;
+    margin: 2rem 0;
+  }
+  .card-img{
+    margin:0;
+  }
+  #card-2{
+    flex-direction: column-reverse;
+  }
+  #card-2 .card-img{
+    margin:0;
+  }
+
+}
+
+@media screen and (max-width: 850px){
+
+
+  .footer-social{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .copyright{
+    text-align: center;
+  }
+  .footer-menu{
+    flex-direction: column;
+  }
+  .footer-text-info{
+    margin-bottom: 2.5rem;
+    width: 80%;
+
+  }
+  .ready-card{
+    bottom:90%;
+    left: 5%;
+    right: 5%;
+  }
+
+}
+@media screen and (max-width: 750px){
+
+  .logo-img img{
+    width: 200px;
+  }
+
+  body{
+    font-size: 1rem;
+  }
+
+  h1{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0;
+  }
+
+  p{
+    font-size: 0.95rem;
+    padding: 0;
+  }
+  .card{
+    padding: 2rem 2rem;
+    margin: 1rem;
+  }
+  .get-started-btn{
+    padding: 1rem 4rem;
+  }
+  .ready-card{
+    padding: 1rem 0;
+  }
+  #card-2{
+    margin: 1rem;
+  }
+  #landing{
+    padding: 2rem 1rem;
+  }
+  #try-it{
+    padding: 0.5rem 1.5rem;
+  }
+  #footer{
+    padding: 4rem 1rem;
+  }
+  #illustrations{
+    padding: 4rem 1rem 16rem 1rem;
+  }
+}
+
+@media screen and (max-width: 375px){
+
+  .logo-img img{
+    width: 150px;
+  }
+
+  #landing{
+    background: url("images/bg-hero-mobile.svg");
+  }
+}
