@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Vinam09/huddle-landingpage-frontend)
-- Live Site URL: [Add live site URL here](https://vinam09.github.io/huddle-landingpage-frontend/)
+- Live Site URL: [Live Site](https://vinam09.github.io/huddle-landingpage-frontend/)
 
 ## My process
 
@@ -40,4 +40,4 @@ Users should be able to:
 
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Vinam09)
+- Frontend Mentor - [Vinam09](https://www.frontendmentor.io/profile/Vinam09)
